@@ -1,0 +1,126 @@
+/* General Styles */
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-logo {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-links {
+    display: flex;
+    flex: 2;
+    gap: 30px;
+}
+
+.footer-links div {
+    flex: 1;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e1e1e1;
+    padding-top: 20px;
+}
+
+.payments img {
+    width: 40px;
+    margin: 0 5px;
+}
+
+.subscription {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subscription input {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.subscription button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.call-button {
+    padding: 10px 20px;
+    border: 2px solid #e60000;
+    color: #e60000;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .subscription {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo {
+        text-align: center;
+    }
+
+    .subscription {
+        width: 100%;
+    }
+
+    .subscription input {
+        width: 100%;
+    }
+
+    .call-button {
+        width: 100%;
+    }
+}

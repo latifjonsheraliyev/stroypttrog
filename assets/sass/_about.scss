@@ -1,0 +1,129 @@
+.about{
+    background-image: url(../../img/about.png);
+    width: 100%;
+    max-height: 1566px;
+    background-repeat: no-repeat;
+    background-position: right;
+    // background-size: cover;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+
+}
+
+.about_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.inside_wrappers{
+    display: flex;
+    gap: 62px;
+    flex-wrap: wrap;
+}
+
+
+.about_wrapper h2{
+font-size: 33px;
+font-weight: 700;
+line-height: 31px;
+text-align: left;
+color: $twoC;
+}
+
+.about_wrapper h3{
+font-size: 17px;
+font-weight: 500;
+line-height: 26px;
+text-align: left;
+color: $twoC;
+width: 66%;
+}
+
+.about_inside{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.about_inside h3{
+font-size: 26px;
+font-weight: 500;
+line-height: 22px;
+text-align: left;
+color: $oneone;
+}
+
+.about_inside p{
+font-size: 15px;
+font-weight: 400;
+line-height: 18px;
+text-align: left;
+color: $fourfour;
+width: 70%;
+}
+
+.about_button{
+    width: 252px;
+height: 62px;
+border-radius: 8px;
+background-color: $zeroone;
+color: $f;
+font-size: 13px;
+font-weight: 700;
+line-height: 18px;
+transition: 0.3s;
+}
+
+.about_button:hover{
+color: $zeroone;
+background-color: $f;
+border: 3px solid $zeroone;
+    width: 252px;
+height: 62px;
+border-radius: 8px;
+font-size: 13px;
+font-weight: 700;
+line-height: 18px;
+}
+
+@media(max-width:1000px){
+    .about{
+    background-image: url(../../img/about.png);
+    width: 100%;
+    max-height: 1566px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+
+}
+}
+
+@media(max-width:500px){
+    .about{
+    background: none;
+}
+.inside_wrappers{
+    display: flex;
+    gap: 42px;
+    flex-wrap: wrap;
+}
+
+.about_inside p{
+font-size: 15px;
+font-weight: 400;
+line-height: 18px;
+text-align: left;
+color: $fourfour;
+width: 70%;
+}
+.about_wrapper h3{
+width:100%;
+}
+
+
+}
